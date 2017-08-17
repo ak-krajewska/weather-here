@@ -8,8 +8,8 @@ function displayTemp(cTemp, faren){
 } */
 
 function displayTemp (cTemp, f){
-    if(f) return (cTemp * 9/5 + 32) + " F";
-    return cTemp + " C";
+    if(f) return Math.round(cTemp * 9/5 + 32) + " F";
+    return Math.round(cTemp) + " C";
 }
 
 function render(wd, faren){
@@ -22,9 +22,8 @@ function render(wd, faren){
             
     $('#currentLocation').html(currentLocation);
     $('#currentWeather').html(currentWeather);
-    $('#currentTemp').html(currentTemp);
-    $('#high').html(high);
-    $('#low').html(low);
+    $('#currentTemp').html('now: ' + currentTemp);
+    $('#high-low').html('high/low: ' + high + ' / ' + low);
     $('#icon').html('<img src="' + icon + '">');
 }
 

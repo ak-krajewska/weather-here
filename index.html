@@ -2,20 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8">
+         <!-- bootstrap cdn -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <!-- end bootstrap -->
         <link rel="stylesheet" href="resources/style.css" type="text/css">
         <title>And Now the Weather</title>
     </head>
     <body>
-        <h1>Local Weather for <span id="currentLocation">Your Current Location</span></h1>
-        <p id="icon"></p>
+        <div class="jumbotron text-center">
         
-            <p id="currentWeather">loading...</p>
-            
-            <p>current temperature: <span id="currentTemp">loading...</span></p> 
-       
-            <p>today's high: <span id="high">loading...</span></p>
-           <p>today's low: <span id="low">laoding...</span></p>
-        <p><a href="#" id="toggle">Toggle C/F</a></p>    
+            <h1>The Weather in <span id="currentLocation">Your Current Location</span></h1>
+            <p id="icon"></p>
+
+                <p id="currentWeather">loading...</p>
+                <div class="well">
+                    <p><span id="currentTemp">loading...</span></p> </div>
+               
+                <div class="well"><p id="high-low"></p></div>
+
+                
+             <button type="button" class="btn btn-primary" id="toggle">Toggle C/F</button>
+        </div>
         
         
         
